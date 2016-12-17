@@ -51,8 +51,6 @@ if __name__ == '__main__':
     train_vectors = vectorizer.fit_transform(train_data)
     test_vectors = vectorizer.transform(test_data)
 
-    plt.show()
-
     our_test = vectorizer.transform(["I hate it. This is murder. This is soo bad."]) 
 
     # Perform classification with SVM, kernel=rbf

@@ -18,7 +18,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     data_dir = sys.argv[1]
-    classes = ['pos', 'neg']
+    classes = ['anger', 'fear']
 
     # Read the data
     train_data = []

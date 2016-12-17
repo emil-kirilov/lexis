@@ -5,6 +5,7 @@ import time
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import svm
 from sklearn.metrics import classification_report
+import matplotlib.pyplot as plt
 
 def usage():
     print("Usage:")
@@ -31,10 +32,16 @@ if __name__ == '__main__':
                 content = f.read()
                 if fname.startswith('cv9'):
                     test_data.append(content)
-                    test_labels.append(curr_class)
+                    class_num = 1
+                    if curr_class=="neg":
+                        class_num = 2 
+                    test_labels.append(class_num)
                 else:
                     train_data.append(content)
-                    train_labels.append(curr_class)
+                    class_num = 1
+                    if curr_class=="neg":
+                        class_num = 2 
+                    train_labels.append(class_num)
 
     # Create feature vectors
     vectorizer = TfidfVectorizer(min_df=5,
@@ -43,6 +50,8 @@ if __name__ == '__main__':
                                  use_idf=True)
     train_vectors = vectorizer.fit_transform(train_data)
     test_vectors = vectorizer.transform(test_data)
+
+    plt.show()
 
     our_test = vectorizer.transform(["I hate it. This is murder. This is soo bad."]) 
 
@@ -61,7 +70,7 @@ if __name__ == '__main__':
 
     # Perform classification with SVM, kernel=linear
 
-    classifier_linear = svm.SVC(kernel='linear')
+    classifier_linear = svm.SVC(kernel='linear', C=10, decision_function_shape = 'ovo')
     t0 = time.time()
     classifier_linear.fit(train_vectors, train_labels)
     t1 = time.time()

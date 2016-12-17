@@ -18,30 +18,29 @@ if __name__ == '__main__':
         sys.exit(1)
 
     data_dir = sys.argv[1]
-    classes = ['anger', 'fear']
+    classes = ['anger', 'fear', 'sadness', 'surprise', 'happiness']
 
     # Read the data
     train_data = []
     train_labels = []
     test_data = []
     test_labels = []
+    iterator = 0
     for curr_class in classes:
         dirname = os.path.join(data_dir, curr_class)
         for fname in os.listdir(dirname):
+            if iterator > 5000:
+                iterator=0 
+                break
+            iterator = iterator + 1
             with open(os.path.join(dirname, fname), 'r') as f:
                 content = f.read()
-                if fname.startswith('cv9'):
+                if iterator > 4000:
                     test_data.append(content)
-                    class_num = 1
-                    if curr_class=="neg":
-                        class_num = 2 
-                    test_labels.append(class_num)
+                    test_labels.append(curr_class)
                 else:
                     train_data.append(content)
-                    class_num = 1
-                    if curr_class=="neg":
-                        class_num = 2 
-                    train_labels.append(class_num)
+                    train_labels.append(curr_class)
 
     # Create feature vectors
     vectorizer = TfidfVectorizer(min_df=5,
@@ -79,7 +78,7 @@ if __name__ == '__main__':
         print(our_test)
         print(prediction_rbf)
     
-    exit()
+    # exit()
     prediction_linear = classifier_linear.predict(test_vectors)
     t2 = time.time()
     time_linear_train = t1-t0

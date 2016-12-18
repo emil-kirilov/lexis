@@ -67,8 +67,8 @@ if __name__ == '__main__':
     # time_rbf_predict = t2-t1
 
     # Perform classification with SVM, kernel=linear
-
-    classifier_linear = svm.SVC(kernel='linear', C=10, decision_function_shape = 'ovo', probability=True)
+    #removed ", decision_function_shape = 'ovo'"
+    classifier_linear = svm.SVC(kernel='linear', C=10, probability=True)
     t0 = time.time()
     classifier_linear.fit(train_vectors, train_labels)
     t1 = time.time()

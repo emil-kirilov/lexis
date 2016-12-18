@@ -1,3 +1,4 @@
+#http://gizmodo.com/the-best-worst-product-reviews-on-amazon-1648733527 - test reviews amazon
 import sys
 import os
 import time
@@ -18,7 +19,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     data_dir = sys.argv[1]
-    classes = ['anger', 'fear', 'sadness', 'surprise', 'happiness']
+    classes = ['anger', 'fear', 'sadness', 'surprise', 'happiness', 'neutral', 'disgust']
 
     # Read the data
     train_data = []
@@ -67,7 +68,7 @@ if __name__ == '__main__':
 
     # Perform classification with SVM, kernel=linear
 
-    classifier_linear = svm.SVC(kernel='linear', C=10, decision_function_shape = 'ovo')
+    classifier_linear = svm.SVC(kernel='linear', C=10, decision_function_shape = 'ovo', probability=True)
     t0 = time.time()
     classifier_linear.fit(train_vectors, train_labels)
     t1 = time.time()
@@ -75,8 +76,9 @@ if __name__ == '__main__':
         var = raw_input("Please enter something: ")
         our_test = vectorizer.transform([var])
         prediction_rbf = classifier_linear.predict(our_test)
-        print(our_test)
-        print(prediction_rbf)
+        priediction_proba = classifier_linear.predict_proba(our_test)
+        print(zip(classifier_linear.classes_, priediction_proba[0])) #shows all propabilities
+        print(prediction_rbf) #shows determined label
     
     # exit()
     prediction_linear = classifier_linear.predict(test_vectors)

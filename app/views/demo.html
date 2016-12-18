@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+    <title>Lexis</title>
+
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="style.css">
+
+	<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	<style>
+			textarea {
+				outline: none;
+				resize: none;
+				width: 500px;
+				text-align: left !important;
+				padding: 10px;
+				border-radius: 5px;
+			}
+			#chart-body{
+				width: 650px;
+				margin: 0 auto;
+			}
+
+		</style>
+
+</head>
+
+<body>
+
+	<div class="site-content">
+		<header>
+		</header>
+		<!-- header -->
+
+		<main class="main-content">
+			<div class="fullwidth-block">
+				<div class="container">
+					<h2 class="section-title">Try Lexis</h2>
+					<small class="section-subtitle">Just type something in the textarea</small>
+					<textarea class="figure" id="main-input">Some example text here</textarea>
+				</div>
+			</div>
+			<!-- .fullwidth-block -->
+
+			<div class="fullwidth-block">
+				<div class="container">
+					<h2 class="section-title">Emotions in the text</h2>
+					<small class="section-subtitle">We can detect multiple types of emotion</small>
+
+					<div class="row">
+						<div id="chart-body">
+							<div id="chart"><svg width="650" height="600"><g transform="translate(80,30)"><line x1="50" y1="0" x2="10.90842587659851" y2="18.82550990706332" class="line" transform="translate(200, 200)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="10.90842587659851" y1="18.82550990706332" x2="1.253604390908819" y2="61.12604669781572" class="line" transform="translate(200, 200)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="1.253604390908819" y1="61.12604669781572" x2="28.305813044122086" y2="95.04844339512096" class="line" transform="translate(200, 200)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="28.305813044122086" y1="95.04844339512096" x2="71.69418695587791" y2="95.04844339512096" class="line" transform="translate(200, 200)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="71.69418695587791" y1="95.04844339512096" x2="98.74639560909118" y2="61.12604669781573" class="line" transform="translate(200, 200)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="98.74639560909118" y1="61.12604669781573" x2="89.0915741234015" y2="18.82550990706333" class="line" transform="translate(200, 200)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="89.0915741234015" y1="18.82550990706333" x2="50.000000000000014" y2="0" class="line" transform="translate(200, 200)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="100" y1="0" x2="21.81685175319702" y2="37.65101981412664" class="line" transform="translate(150, 150)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="21.81685175319702" y1="37.65101981412664" x2="2.507208781817638" y2="122.25209339563143" class="line" transform="translate(150, 150)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="2.507208781817638" y1="122.25209339563143" x2="56.61162608824417" y2="190.0968867902419" class="line" transform="translate(150, 150)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="56.61162608824417" y1="190.0968867902419" x2="143.38837391175582" y2="190.0968867902419" class="line" transform="translate(150, 150)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="143.38837391175582" y1="190.0968867902419" x2="197.49279121818236" y2="122.25209339563146" class="line" transform="translate(150, 150)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="197.49279121818236" y1="122.25209339563146" x2="178.183148246803" y2="37.65101981412666" class="line" transform="translate(150, 150)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="178.183148246803" y1="37.65101981412666" x2="100.00000000000003" y2="0" class="line" transform="translate(150, 150)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="150" y1="0" x2="32.72527762979553" y2="56.47652972118996" class="line" transform="translate(100, 100)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="32.72527762979553" y1="56.47652972118996" x2="3.760813172726457" y2="183.37814009344714" class="line" transform="translate(100, 100)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="3.760813172726457" y1="183.37814009344714" x2="84.91743913236625" y2="285.14533018536287" class="line" transform="translate(100, 100)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="84.91743913236625" y1="285.14533018536287" x2="215.0825608676337" y2="285.14533018536287" class="line" transform="translate(100, 100)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="215.0825608676337" y1="285.14533018536287" x2="296.2391868272735" y2="183.37814009344717" class="line" transform="translate(100, 100)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="296.2391868272735" y1="183.37814009344717" x2="267.2747223702045" y2="56.47652972118999" class="line" transform="translate(100, 100)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="267.2747223702045" y1="56.47652972118999" x2="150.00000000000003" y2="0" class="line" transform="translate(100, 100)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="200" y1="0" x2="43.63370350639404" y2="75.30203962825328" class="line" transform="translate(50, 50)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="43.63370350639404" y1="75.30203962825328" x2="5.014417563635276" y2="244.50418679126287" class="line" transform="translate(50, 50)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="5.014417563635276" y1="244.50418679126287" x2="113.22325217648834" y2="380.1937735804838" class="line" transform="translate(50, 50)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="113.22325217648834" y1="380.1937735804838" x2="286.77674782351164" y2="380.1937735804838" class="line" transform="translate(50, 50)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="286.77674782351164" y1="380.1937735804838" x2="394.9855824363647" y2="244.50418679126292" class="line" transform="translate(50, 50)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="394.9855824363647" y1="244.50418679126292" x2="356.366296493606" y2="75.30203962825333" class="line" transform="translate(50, 50)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><line x1="356.366296493606" y1="75.30203962825333" x2="200.00000000000006" y2="0" class="line" transform="translate(50, 50)" style="stroke: grey; stroke-opacity: 0.75; stroke-width: 0.3px;"></line><text x="50" y="0" class="legend" transform="translate(205, 200)" fill="#737373" style="font-family: sans-serif; font-size: 10px;">168%</text><text x="100" y="0" class="legend" transform="translate(155, 150)" fill="#737373" style="font-family: sans-serif; font-size: 10px;">336%</text><text x="150" y="0" class="legend" transform="translate(105, 100)" fill="#737373" style="font-family: sans-serif; font-size: 10px;">504%</text><text x="200" y="0" class="legend" transform="translate(55, 50)" fill="#737373" style="font-family: sans-serif; font-size: 10px;">672%</text><text x="250" y="0" class="legend" transform="translate(5, 0)" fill="#737373" style="font-family: sans-serif; font-size: 10px;">840%</text><g class="axis"><line x1="250" y1="250" x2="250" y2="0" class="line" style="stroke: grey; stroke-width: 1px;"></line><text class="legend" text-anchor="middle" dy="1.5em" transform="translate(0, -10)" x="250" y="-20" style="font-family: sans-serif; font-size: 11px;">Anger</text></g><g class="axis"><line x1="250" y1="250" x2="54.54212938299255" y2="94.1275495353166" class="line" style="stroke: grey; stroke-width: 1px;"></line><text class="legend" text-anchor="middle" dy="1.5em" transform="translate(0, -10)" x="36.9509210274619" y="81.65775349814193" style="font-family: sans-serif; font-size: 11px;">Fear</text></g><g class="axis"><line x1="250" y1="250" x2="6.268021954544095" y2="305.6302334890786" class="line" style="stroke: grey; stroke-width: 1px;"></line><text class="legend" text-anchor="middle" dy="1.5em" transform="translate(0, -10)" x="-15.667856069546929" y="310.0806521682049" style="font-family: sans-serif; font-size: 11px;">Sadness</text></g><g class="axis"><line x1="250" y1="250" x2="141.52906522061042" y2="475.2422169756048" class="line" style="stroke: grey; stroke-width: 1px;"></line><text class="legend" text-anchor="middle" dy="1.5em" transform="translate(0, -10)" x="131.76668109046537" y="493.26159433365314" style="font-family: sans-serif; font-size: 11px;">Disgust</text></g><g class="axis"><line x1="250" y1="250" x2="358.4709347793895" y2="475.2422169756048" class="line" style="stroke: grey; stroke-width: 1px;"></line><text class="legend" text-anchor="middle" dy="1.5em" transform="translate(0, -10)" x="368.23331890953455" y="493.26159433365314" style="font-family: sans-serif; font-size: 11px;">Neutral</text></g><g class="axis"><line x1="250" y1="250" x2="493.7319780454559" y2="305.63023348907865" class="line" style="stroke: grey; stroke-width: 1px;"></line><text class="legend" text-anchor="middle" dy="1.5em" transform="translate(0, -10)" x="515.6678560695469" y="310.08065216820495" style="font-family: sans-serif; font-size: 11px;">Happiness</text></g><g class="axis"><line x1="250" y1="250" x2="445.4578706170075" y2="94.12754953531666" class="line" style="stroke: grey; stroke-width: 1px;"></line><text class="legend" text-anchor="middle" dy="1.5em" transform="translate(0, -10)" x="463.0490789725381" y="81.657753498142" style="font-family: sans-serif; font-size: 11px;">Surprise</text></g><polygon class="radar-chart-serie0" points="250,245.23809523809524 229.0580852910349,233.29938030735536 226.78743066233753,255.29811747515035 141.52906522061042,475.2422169756048 280.99169565125413,314.3549191358871 264.79801295275985,253.37754989040835 259.3075176484289,242.5775023588246 250,245.23809523809524 " style="stroke-width: 2px; stroke: rgb(31, 119, 180); fill: rgb(31, 119, 180); fill-opacity: 0.5;"></polygon><circle class="radar-chart-serie0" r="5" alt="0.16" cx="250" cy="245.23809523809524" data-id="Anger" style="fill: rgb(31, 119, 180); fill-opacity: 0.9;"><title>0.16</title></circle><circle class="radar-chart-serie0" r="5" alt="0.8999999999999999" cx="229.0580852910349" cy="233.29938030735536" data-id="Fear" style="fill: rgb(31, 119, 180); fill-opacity: 0.9;"><title>0.8999999999999999</title></circle><circle class="radar-chart-serie0" r="5" alt="0.8" cx="226.78743066233753" cy="255.29811747515035" data-id="Sadness" style="fill: rgb(31, 119, 180); fill-opacity: 0.9;"><title>0.8</title></circle><circle class="radar-chart-serie0" r="5" alt="8.4" cx="141.52906522061042" cy="475.2422169756048" data-id="Disgust" style="fill: rgb(31, 119, 180); fill-opacity: 0.9;"><title>8.4</title></circle><circle class="radar-chart-serie0" r="5" alt="2.4" cx="280.99169565125413" cy="314.3549191358871" data-id="Neutral" style="fill: rgb(31, 119, 180); fill-opacity: 0.9;"><title>2.4</title></circle><circle class="radar-chart-serie0" r="5" alt="0.51" cx="264.79801295275985" cy="253.37754989040835" data-id="Happiness" style="fill: rgb(31, 119, 180); fill-opacity: 0.9;"><title>0.51</title></circle><circle class="radar-chart-serie0" r="5" alt="0.4" cx="259.3075176484289" cy="242.5775023588246" data-id="Surprise" style="fill: rgb(31, 119, 180); fill-opacity: 0.9;"><title>0.4</title></circle><text style="opacity: 0; font-family: sans-serif; font-size: 13px;"></text></g><svg width="500" height="500"><text class="title" transform="translate(90,0)" x="430" y="10" font-size="12px" fill="#404040">What % of owners use a specific service in a week</text><g class="legend" height="100" width="200" transform="translate(90,20)"></g></svg></svg></div>
+						</div>
+					</div>
+				</div>
+				<!-- .row -->
+			</div>
+			<!-- .container -->
+	</main></div>
+	<!-- .fullwidth-block -->
+	
+	<!-- .main-content -->
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>Copyright 2016 by Company name, Designed by Themezy. All rights reserved</p>
+
+			<div class="social-links">
+				<a href="file:///Users/kristiyan/Documents/Projects/TextAnalysis/Textonomy/static/demo.html#" class="facebook"><i class="fa fa-facebook"></i></a>
+				<a href="file:///Users/kristiyan/Documents/Projects/TextAnalysis/Textonomy/static/demo.html#" class="twitter"><i class="fa fa-twitter"></i></a>
+				<a href="file:///Users/kristiyan/Documents/Projects/TextAnalysis/Textonomy/static/demo.html#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+				<a href="file:///Users/kristiyan/Documents/Projects/TextAnalysis/Textonomy/static/demo.html#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+			</div>
+		</div>
+	</footer>
+	
+
+	<script src="./Try Lexis_files/jquery-1.11.1.min.js"></script>
+	<script src="./Try Lexis_files/plugins.js"></script>
+	<script src="./Try Lexis_files/app.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#main-input').keyup(function(e){
+				e.preventDefault()
+				if (e.keyCode == 13) {
+					alert("enter!")
+					return false
+				}
+			});
+		})
+		var w = 500,
+			h = 500;
+
+		var colorscale = d3.scale.category10();
+
+
+		//Data
+		var d = [
+			[
+				{ axis: "Anger", value: 0.016*10 },
+				{ axis: "Fear", value: 0.09*10 },
+				{ axis: "Sadness", value: 0.08*10 },
+				{ axis: "Disgust", value: 0.84*10 },
+				{ axis: "Neutral", value: 0.24*10 },
+				{ axis: "Happiness", value: 0.051*10 },
+				{ axis: "Surprise", value: 0.04*10 }
+			]
+		];
+
+		//Options for the Radar chart, other than default
+		var mycfg = {
+			w: w,
+			h: h,
+			maxValue: 1,
+			levels: 5,
+			ExtraWidthX: 150
+		}
+
+		//Call function to draw the Radar chart
+		//Will expect that data is in %'s
+
+		var updateChart = function(data){
+			RadarChart.draw("#chart", data, mycfg);
+		}
+		updateChart(d);
+
+		////////////////////////////////////////////
+		/////////// Initiate legend ////////////////
+		////////////////////////////////////////////
+
+		var svg = d3.select('#chart-body')
+			.selectAll('svg')
+			.append('svg')
+			.attr("width", w )
+			.attr("height", h)
+
+		//Create the title for the legend
+		var text = svg.append("text")
+			.attr("class", "title")
+			.attr('transform', 'translate(90,0)')
+			.attr("x", w - 70)
+			.attr("y", 10)
+			.attr("font-size", "12px")
+			.attr("fill", "#404040")
+			.text("What % of owners use a specific service in a week");
+
+		//Initiate Legend	
+		var legend = svg.append("g")
+			.attr("class", "legend")
+			.attr("height", 100)
+			.attr("width", 200)
+			.attr('transform', 'translate(90,20)')
+			;
+		//Create colour squares
+		legend.selectAll('rect')
+			.data(LegendOptions)
+			.enter()
+			.append("rect")
+			.attr("x", w - 65)
+			.attr("y", function (d, i) { return i * 20; })
+			.attr("width", 10)
+			.attr("height", 10)
+			.style("fill", function (d, i) { return colorscale(i); })
+			;
+		//Create text next to squares
+		legend.selectAll('text')
+			.data(LegendOptions)	
+			.enter()
+			.append("text")
+			.attr("x", w - 52)
+			.attr("y", function (d, i) { return i * 20 + 9; })
+			.attr("font-size", "11px")
+			.attr("fill", "#737373")
+			.text(function (d) { return d; })
+			;	
+	</script>
+
+
+
+</body></html>

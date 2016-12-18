@@ -99,7 +99,6 @@
 			$('#main-input').keyup(function (e) {
 				if (e.keyCode == 13) {
 					var text = $('#main-input').val();
-					alert(text)
 					$.ajax('http://localhost:3000/api', {
 						'data': JSON.stringify({ 'data': text }),
 						'type': 'POST',

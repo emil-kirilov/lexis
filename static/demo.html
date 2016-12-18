@@ -1,194 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Try Lexis</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-	<title>Try Lexis</title>
-
-	<!-- Loading third party fonts -->
-	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
-	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-	<!-- Loading main css file -->
-	<link rel="stylesheet" href="style.css">
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-	<script src="js/RadarChart.js"></script>
-
-	<!--[if lt IE 9]>
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
 
-	<style>
-			textarea {
-				outline: none;
-				resize: none;
-				width: 500px;
-				text-align: left !important;
-				padding: 10px;
-				border-radius: 5px;
-			}
-			#chart-body{
-				width: 650px;
-				margin: 0 auto;
-			}
+	</head>
 
-		</style>
 
-</head>
+	<body>
+		
+		<div class="site-content">
+			<header>
+			</header> <!-- header -->
 
-<body>
+			<main class="main-content">
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title">Responsive landing page</h2>
+						<small class="section-subtitle">Voluptatem accusantum doloremque</small>
 
-	<div class="site-content">
-		<header>
-		</header>
-		<!-- header -->
+						<img src="images/devices.png" alt="" class="figure">
+					</div>
+				</div> <!-- .fullwidth-block -->
 
-		<main class="main-content">
-			<div class="fullwidth-block">
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title">A few features of our project</h2>
+						<small class="section-subtitle">Voluptatem accusantum doloremque</small>
+
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="images/icon-pie-chart.png" alt="" class="icon"></div>
+									<h3 class="feature-title">Easy Analitycs</h3>
+									<p>Neque porro quisquam est qui dolorem ipsum quia dolor amet consectetur adipisci velit sed.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="images/icon-mobile.png" alt="" class="icon"></div>
+									<h3 class="feature-title">Smartphone compatible</h3>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="images/icon-piggy-bank.png" alt="" class="icon"></div>
+									<h3 class="feature-title">Time-saving</h3>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="images/icon-lock.png" alt="" class="icon"></div>
+									<h3 class="feature-title">Solid Protection</h3>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+								</div>
+							</div>
+						</div> <!-- .row -->
+					</div> <!-- .container -->
+				</div> <!-- .fullwidth-block -->
+			</main> <!-- .main-content -->
+
+			<footer class="site-footer">
 				<div class="container">
-					<h2 class="section-title">Try Lexis</h2>
-					<small class="section-subtitle">Just type something in the textarea</small>
-					<textarea class="figure" id="main-input">Some example text here</textarea>
-				</div>
-			</div>
-			<!-- .fullwidth-block -->
+					<p>Copyright 2014 by Company name, Designed by Themezy. All rights reserved</p>
 
-			<div class="fullwidth-block">
-				<div class="container">
-					<h2 class="section-title">Emotions in the text</h2>
-					<small class="section-subtitle">We can detect multiple types of emotion</small>
-
-					<div class="row">
-						<div id="chart-body">
-							<div id="chart"></div>
-						</div>
+					<div class="social-links">
+						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+						<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
 					</div>
 				</div>
-				<!-- .row -->
-			</div>
-			<!-- .container -->
-	</div>
-	<!-- .fullwidth-block -->
-	</main>
-	<!-- .main-content -->
-
-	<footer class="site-footer">
-		<div class="container">
-			<p>Copyright 2016 by Company name, Designed by Themezy. All rights reserved</p>
-
-			<div class="social-links">
-				<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-				<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-				<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
-			</div>
+			</footer>
 		</div>
-	</footer>
-	</div>
 
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/app.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('#main-input').keyup(function(e){
-				if (e.keyCode == 13) {
-					alert("enter!")
-					return false
-				}
-			});
-		})
-		var w = 500,
-			h = 500;
-
-		var colorscale = d3.scale.category10();
-
-
-		//Data
-		var d = [
-			[
-				{ axis: "Anger", value: 0.016*10 },
-				{ axis: "Fear", value: 0.09*10 },
-				{ axis: "Sadness", value: 0.08*10 },
-				{ axis: "Disgust", value: 0.84*10 },
-				{ axis: "Neutral", value: 0.24*10 },
-				{ axis: "Happiness", value: 0.051*10 },
-				{ axis: "Surprise", value: 0.04*10 }
-			]
-		];
-
-		//Options for the Radar chart, other than default
-		var mycfg = {
-			w: w,
-			h: h,
-			maxValue: 1,
-			levels: 5,
-			ExtraWidthX: 150
-		}
-
-		//Call function to draw the Radar chart
-		//Will expect that data is in %'s
-
-		var updateChart = function(data){
-			RadarChart.draw("#chart", data, mycfg);
-		}
-		updateChart(d);
-
-		////////////////////////////////////////////
-		/////////// Initiate legend ////////////////
-		////////////////////////////////////////////
-
-		var svg = d3.select('#chart-body')
-			.selectAll('svg')
-			.append('svg')
-			.attr("width", w )
-			.attr("height", h)
-
-		//Create the title for the legend
-		var text = svg.append("text")
-			.attr("class", "title")
-			.attr('transform', 'translate(90,0)')
-			.attr("x", w - 70)
-			.attr("y", 10)
-			.attr("font-size", "12px")
-			.attr("fill", "#404040")
-			.text("What % of owners use a specific service in a week");
-
-		//Initiate Legend	
-		var legend = svg.append("g")
-			.attr("class", "legend")
-			.attr("height", 100)
-			.attr("width", 200)
-			.attr('transform', 'translate(90,20)')
-			;
-		//Create colour squares
-		legend.selectAll('rect')
-			.data(LegendOptions)
-			.enter()
-			.append("rect")
-			.attr("x", w - 65)
-			.attr("y", function (d, i) { return i * 20; })
-			.attr("width", 10)
-			.attr("height", 10)
-			.style("fill", function (d, i) { return colorscale(i); })
-			;
-		//Create text next to squares
-		legend.selectAll('text')
-			.data(LegendOptions)	
-			.enter()
-			.append("text")
-			.attr("x", w - 52)
-			.attr("y", function (d, i) { return i * 20 + 9; })
-			.attr("font-size", "11px")
-			.attr("fill", "#737373")
-			.text(function (d) { return d; })
-			;	
-	</script>
-
-</body>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
 
 </html>
